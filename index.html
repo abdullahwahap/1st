@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,33 @@
     <meta name="description" content="This is my first project">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
+    <section class="newItemEnt">
+        <form id="itemEntForm">
+            <label for="newItem">Add New Item</label>
+            <input type="text" id="newItem" size="40" autocomplete="off" placeholder="Enter new item here" tabindex="0">
+            <button id="addItemBtn" class="button" title="Add new item" aria-label="Add new item to list"
+                tabindex="0">+</button>
+        </form>
+    </section>
+    <section class="listItemsContainer">
+        <div class="listTitle">
+            <h1>To Do List</h1>
+            <button id="clearListBtn" class="button" title="Clear all items" aria-label="Clear all items from list"
+                tabindex="0">Clear</button>
+        </div>
+        <hr>
+        <div class="listItems">
+            <input type="checkbox" id="item1" tabindex="0">
+            <label for="item1">Item 1</label>
+        </div>
+        <div class="listItems">
+            <input type="checkbox" id="item2" tabindex="0">
+            <label for="item2">Item 2</label>
+        </div>
+    </section>
     <script src="prog/prog.js"></script>
 </body>
+
 </html>
