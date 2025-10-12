@@ -1,0 +1,5 @@
+@mixin mq($brakepoint)  {
+    @media ($brakepoint) {
+        @content;
+    }
+}

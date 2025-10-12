@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Project</title>
     <meta name="description" content="This is my first project">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="sass/main/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <section class="newItemEnt">
-        <div class="newItem">
+        <form id="form">
             <label for="newItem">Add New Item</label>
             <input type="text" id="newItem" size="40" autocomplete="off" placeholder="Enter new item here" tabindex="0">
             <button id="addItemBtn" class="button" title="Add new item" aria-label="Add new item to list"
                 tabindex="0">+</button>
-        </div>
+        </form>
     </section>
     <section class="listItemsContainer">
         <div class="listTitle">
@@ -25,16 +33,9 @@
                 tabindex="0">Clear</button>
         </div>
         <hr>
-        <div class="listItems">
-            <input type="checkbox" id="item1" tabindex="0">
-            <label for="item1">Item 1</label>
-        </div>
-        <div class="listItems">
-            <input type="checkbox" id="item2" tabindex="0">
-            <label for="item2">Item 2</label>
-        </div>
+        <div class="container"></div>
     </section>
-    <script src="prog/prog.js"></script>
+    <script src="prog/prog.js" type="module"></script>
 </body>
 
 </html>

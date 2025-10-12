@@ -1,0 +1,153 @@
+.newItemEnt {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+.newItemEnt #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.newItemEnt #form label {
+  position: absolute;
+  left: -9000px;
+}
+.newItemEnt #form input[type=text] {
+  width: 80%;
+  font-size: 1.25rem;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  padding: 0.75rem;
+  outline: none;
+}
+.newItemEnt #form input[type=text]:focus,
+.newItemEnt #form input[type=text]:hover {
+  -webkit-box-shadow: 4px 2px 5px #000;
+          box-shadow: 4px 2px 5px #000;
+}
+.newItemEnt #form button {
+  font-size: 1.25rem;
+  background-color: green;
+  padding: 0.75rem;
+}
+@media (max-width: 768px) {
+  .newItemEnt #form button {
+    font-size: 1.5rem;
+  }
+}
+
+.listItemsContainer {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+.listItemsContainer .listTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.listItemsContainer .listTitle button {
+  font-size: 1rem;
+  background-color: rgb(252, 73, 73);
+  padding: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .listItemsContainer .listTitle button {
+    padding: 0 0.5rem;
+  }
+}
+.listItemsContainer hr {
+  width: 100%;
+}
+.listItemsContainer .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+}
+.listItemsContainer .item input[type=checkbox] {
+  text-align: center;
+  width: 2.5rem;
+  min-width: 48px;
+  height: 2.5rem;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+.listItemsContainer .item input[type=checkbox]:focus + label {
+  text-decoration: underline;
+}
+.listItemsContainer .item label {
+  font-size: 2.1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  width: 100%;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  html, body {
+    font-size: 22px;
+  }
+}
+
+body {
+  padding: 20px;
+  background-color: #d0e7ff;
+}
+
+section {
+  background-color: #3498db;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.button {
+  width: 15%;
+  min-width: 48px;
+  min-height: 48px;
+  color: #fff;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover, .button:focus {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-box-shadow: 4px 2px 5px #000;
+          box-shadow: 4px 2px 5px #000;
+}
